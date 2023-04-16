@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+_minted-*/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.nav
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.out

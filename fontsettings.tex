@@ -1,0 +1,18 @@
+% font settings
+%% % ref: https://stone-zeng.github.io/2019-07-06-use-opentype-fonts-ii
+\def\FontsPath{fonts/}
+
+%% chinese font settings
+\def\FontsPath{fonts/}
+\def\CJKFontOptions{Path=\FontsPath, AutoFakeBold, AutoFakeSlant}
+\def\CJKFontFamilyOptions{Path=\FontsPath, BoldFont=*, ItalicFont=*, BoldItalicFont=*}
+\setCJKmainfont{simsun.ttc}[\CJKFontOptions]
+\setCJKsansfont{simhei.ttf}[\CJKFontOptions]
+\setCJKmonofont{simfang.ttf}[\CJKFontOptions]
+\newCJKfontfamily[zhsong]\songti{simsun.ttc}[\CJKFontOptions]
+\newCJKfontfamily[zhhei]\heiti{simhei.ttf}[Path=\FontsPath, AutoFakeBold=2.5, AutoFakeSlant]
+\newCJKfontfamily[zhkai]\kaishu{simkai.ttf}[\CJKFontOptions]
+\newCJKfontfamily[zhfs]\fangsong{simfang.ttf}[\CJKFontOptions]
+\newCJKfontfamily[zhyahei]\yahei{msyh.ttc}[Path=\FontsPath, BoldFont=msyhbd.ttc, AutoFakeSlant]
+\newCJKfontfamily[zhli]\lishu{simli.ttf}[\CJKFontOptions]
+\newCJKfontfamily[zhiyou]\youyuan{simyou.ttf}[\CJKFontOptions]

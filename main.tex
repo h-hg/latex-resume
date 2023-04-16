@@ -1,0 +1,128 @@
+\documentclass[]{resume}
+
+\usepackage[style=ieee]{biblatex}
+\addbibresource{ref.bib}
+
+% 页边距：自行调整
+% Word 常规：top = bottom = 2.54cm, left = right = 3.18cm
+% Word 窄 ：top = bottom = left = right = 1.27cm
+% Word 中等：top = bottom = 2.54cm, left = right = 1.91cm
+% Word 宽 ：top = bottom = 2.54cm, left = right = 5.08cm
+\geometry{
+    a4paper,
+    left=1.27cm,
+    right=1.27cm,
+    top=1.27cm,
+    bottom=1.27cm,
+    nohead,
+    nofoot
+}
+
+\begin{document}
+
+\begin{minipage}{0.82\textwidth}
+    \begin{center}
+        \name{姓名}
+        \begin{tabular}{@{}llll}
+           \faPhone      &  (+86)1xx-xxxx-xxxx  & \faEnvelope     &  \href{mailto:yourmail@qq.com}{yourmail@qq.com} \\
+           \faMapMarker  &  xx省xx市            & \faBirthdayCake  & 199x \\
+           \faIdCard     & 中共党员              & \faInfo         & 男 \\
+           \faGithub     & \href{https://github.com/xxx}{github.com/xxx}
+           % 一些可以使用的 图标：\faHome \faWeixin \faWifi \faWeibo \faQq
+        \end{tabular}
+    \end{center}
+\end{minipage}
+\begin{minipage}{3.5cm}
+     \centering
+     % 一寸大小：宽 * 长 = 2.5 cm * 3.5cm = 413 * 295 像素
+     % 小一寸照片：宽 * 长 = 2.2 cm * 3.2 cm = 390 * 260 像素
+     % 228 * 274
+     \includegraphics[width=2.5cm,height=3.5cm]{./img/photo.png}
+\end{minipage}
+
+\section{\faGraduationCap \, 教育经历}
+
+\datedsubsection{xxxx 大学 - 硕士}{20xx.9 -- 20xx.6}
+
+\begin{tabular}{@{}llllll}
+    \noindent
+    学院：   & \makebox[10em][l]{xx 学院}    & 专业： & \makebox[10em][l]{xx}    & 必修课均分：&  \makebox[10em][l]{xx.xx} \\
+\end{tabular}
+
+
+\datedsubsection{xxxx 大学 - 本科}{20xx.9 -- 20xx.6}
+
+\begin{tabular}{@{}llllll}
+  学院：   & \makebox[10em][l]{xx 学院}  & 专业： & \makebox[10em][l]{xx}
+  &
+  绩点与排名： & \makebox[10em][l]{xx/xx、xx/xx} 
+\end{tabular}
+
+\section{\faAward \, 荣誉奖项}
+
+\datedline{xx 奖学金}{20xx.x}
+\datedline{xx 比赛 \quad x 等奖}{20xx.x}
+
+\section{\faCode \, 项目与实习经历}
+
+\subsection{项目名 1}
+
+\begin{itemize}
+    \item 内容 1
+    \item 内容 2
+    \item 内容 3
+\end{itemize}
+
+\datedsubsection{项目名 2}{xx 公司 \hfill 20xx.x - 20xx.x}
+
+\begin{description}
+    \item[描述] 简单介绍
+    \item[内容]
+        \begin{enumerate}
+            \item 内容 1
+            \item 内容 2
+            \item 内容 3
+        \end{enumerate}
+    \item[成果] 成就。
+\end{description}
+
+\section{\aiGoogleScholar \, 科研成果}
+
+\subsection{研究标题 1}
+
+\begin{description}
+    \item[描述] 主要内容
+    \item[成果] \fullcite{he2016deep}. x 作，2022 JCR/IF 为 Qx/x.x。
+\end{description}
+
+
+\section{\faCogs \, 专业技能}
+
+\begin{tabular}{@{}rl}
+    \textbf{英语}    & CET6 \\
+    \textbf{编程语言} & $\bullet$ 精通 xx。 \\
+                    & $\bullet$ 熟练 xx。 \\
+    \textbf{工具}    & $\bullet$ 熟悉 xx。 \\
+                    & $\bullet$ 掌握 xx。 \\
+    \textbf{其他}    & $\bullet$  使用 xx。\\
+                    & $\bullet$ 了解 xx。 \\
+\end{tabular}
+
+\section{\faBuilding \, 校园经历}
+
+\datedsubsection{经历名称 1}{20xx.x - 20xx.x}
+
+\begin{itemize}
+    \item 内容 1。
+    \item 内容 2。
+\end{itemize}
+
+\section{\faUser \, 自我评价}
+
+\begin{itemize}
+    \item 内容 1。
+    \item 内容 2。
+    \item 内容 3。
+\end{itemize}
+
+\end{document}
